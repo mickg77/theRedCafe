@@ -1,0 +1,150 @@
+/* Colours: #D90000
+#A13030
+#8C0000
+#D94141
+#590000
+*/
+
+.logo {
+   margin: 0 auto;
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    
+}
+
+#main {
+    width: 70%;
+    background-color: #fff;
+    margin: 0px auto;
+    max-width: 1000px;
+    
+}
+
+nav {
+    text-align: center;
+    padding: 30px;
+    background-color: #D90000;
+    background-image: url("../images/newlogo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
+nav a:hover {
+    color: #590000; 
+}
+
+ul {
+    padding-left: 10%;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: #D90000;
+    padding: 20px;
+}
+
+#main p,h1,h2,h3{
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 170%;
+}
+
+.sectionpic{
+    width: 100%;
+}
+
+/*contact form page */
+
+iframe {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+
+}
+
+input[type="submit"] {
+    background-color :darkred;
+    border: none;
+    color: #fff;
+    padding:16px 32px;
+    margin: 5px 5px;
+}
+
+form {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*gallery page */
+
+.flex-container {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.flex-container > div {
+    
+    flex: 31%;
+    margin: 1%;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.flex-container img {
+    width: 90%;
+}
+
+/* mobile friendly code */
+
+@media (max-width: 767px){
+    
+      
+    .flex-container >div {
+        flex: 90%;
+    } 
+    
+}
+
+@media (max-width: 1000px){
+ nav {
+        background-image: url("../images/fork.png")
+    }
+
+}
+
+
+
+
+
+
+
