@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Red Cafe Bistro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #warning {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<section id="main">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <!--start of different content-->
+    <h1>Login</h1>
+    <div class="loginform">
+        <form name="enquiry" action="confirm.html" >
+            <label>Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <label>Password</label>
+            <input type="email" id="yourpwd" name="yourpwd" placeholder="Enter password">
+            <div id="warning">
+                <p id="pwdlength">Please enter long enough password</p>
+            </div>
+            <input type="submit" id="submitbtn" value="login">
+        </form>
+    </div>
+
+    <!--end of different content-->
+    <footer>
+        <p>All Content &copy; Red Cafe Bistro 2021</p>
+    </footer>
+</section>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $('#youremail').keyup(function () {
+            if (this.value.length < 8) { // checks the password value length
+                document.getElementById("warning").style.display = "inline";
+            }
+            else {
+                document.getElementById("warning").style.display = "none";
+            }
+        })
+
+        $('#submitbtn').click(function(){
+            if(document.getElementById('yourpwd').value.length < 8){
+                document.getElementById("warning").style.display = "inline";
+                document.getElementById('yourpwd').style.backgroundColor ="#ffcccc";
+                return false;
+            }
+            else {
+                document.getElementById("warning").style.display = "none";
+            }
+
+        })
+
+
+    });
+
+</script>
+</html>
